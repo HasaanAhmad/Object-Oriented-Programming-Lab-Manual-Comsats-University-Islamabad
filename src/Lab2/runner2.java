@@ -1,14 +1,14 @@
 package Lab2;
 
-class Rectangle {
+class Rectangle2 {
     public int length, width;
 
-    public Rectangle() {
+    public Rectangle2() {
         length = 5;
         width = 2;
     }
 
-    public Rectangle(int l, int w) {
+    public Rectangle2(int l, int w) {
         length = l;
         width = w;
     }
@@ -20,9 +20,9 @@ class Rectangle {
 
 public class runner2 {
     public static void main(String args[]) {
-        Rectangle rect = new Rectangle();
+        Rectangle2 rect = new Rectangle2();
         System.out.println(rect.Calculatearea());
-        Rectangle rect1 = new Rectangle(10, 20);
+        Rectangle2 rect1 = new Rectangle2(10, 20);
         System.out.println(rect1.Calculatearea());
     }
 }

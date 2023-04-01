@@ -13,6 +13,7 @@ public class runner {
         Rectangle rect = new Rectangle();
         rect.length = 10;
         rect.width = 5;
+        System.out.print("Area is: ");
         System.out.println(rect.Calculatearea());
     }
 }

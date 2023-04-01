@@ -1,6 +1,15 @@
 package Lab2;
 
 public class GLT5 {
+    public static void main(String[] args) {
+
+        Time t1 = new Time();
+        Time t2 = new Time(23, 22, 40);
+        Time t3 = new Time(20, 22, 40);
+        t1.display();
+        t2.display();
+        t3.display();
+    }
 
 }
 
@@ -10,31 +19,23 @@ class Time {
     int seconds;
 
     public Time() {
-        this(0, 0, 0);
+        isValidTime(0, 0, 0);
     }
 
     public Time(int hours, int minutes, int seconds) {
-        set_time(hours, minutes, seconds);
+        if (isValidTime(hours, minutes, seconds)) {
+            this.hours = hours;
+            this.minutes = minutes;
+            this.seconds = seconds;
+        }
     }
 
-    public void set_time(int hoursIn, int minutesIn, int secondsIn) {
-        if (hours >= 0 && hours <= 23) {
-            hours = hoursIn;
+    public static boolean isValidTime(int hours, int minutes, int seconds) {
+        // check if the hours, minutes, and seconds are within the valid range
+        if (hours >= 0 && hours < 24 && minutes >= 0 && minutes < 60 && seconds >= 0 && seconds < 60) {
+            return true;
         } else {
-            System.out.println("invalid hours");
-        }
-
-        if (minutes >= 0 && minutes <= 59) {
-            minutes = minutesIn;
-        } else {
-
-            System.out.println("Invalid minutes");
-        }
-
-        if (seconds >= 0 && seconds <= 59) {
-            seconds = secondsIn;
-        } else {
-            System.out.println("Invalid seconds");
+            return false;
         }
     }
 
