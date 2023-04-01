@@ -1,15 +1,15 @@
-package Lab3;
+package LAB3;
 
 public class GLT2 {
     public static void main(String[] args) {
         Account a1 = new Account(10000);
-        a1.displayBalance();
+        System.out.println(a1.toString());
         a1.withdrawBalance(500);
-        a1.displayBalance();
+        System.out.println(a1.toString());
         a1.depositBalance(1000);
-        a1.displayBalance();
+        System.out.println(a1.toString());
         Account a2 = new Account(a1.getBalance());
-        a2.displayBalance();
+        System.out.println(a2.toString());
     }
 
 }
@@ -41,8 +41,9 @@ class Account {
         return balance;
     }
 
-    void displayBalance() {
-        System.out.println("Balance: " + balance);
-    };
+    @Override
+    public String toString() {
+        return "Account [balance=" + balance + "]";
+    }
 
 }

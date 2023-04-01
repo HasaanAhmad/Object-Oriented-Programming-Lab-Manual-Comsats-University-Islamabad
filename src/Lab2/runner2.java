@@ -1,4 +1,4 @@
-package Lab2;
+package LAB2;
 
 class Rectangle2 {
     public int length, width;

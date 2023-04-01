@@ -1,4 +1,4 @@
-package Lab2;
+package LAB2;
 
 public class GLT3 {
     public static void main(String[] args) {

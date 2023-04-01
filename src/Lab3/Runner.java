@@ -1,4 +1,4 @@
-package Lab3;
+package LAB3;
 
 class Circle {
     private int radius;
@@ -24,9 +24,9 @@ class Circle {
     }
 
     public double CalculateCircumference() {
-        double a = 3.14 * radius * radius;
-        return a;
+        return 2 * 3.14 * radius;
     }
+
 }
 
 public class Runner {

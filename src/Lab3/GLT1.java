@@ -1,4 +1,4 @@
-package Lab3;
+package LAB3;
 
 /**
  * GLT1
@@ -6,10 +6,10 @@ package Lab3;
 public class GLT1 {
     public static void main(String[] args) {
         Marks m1 = new Marks(90, 30, 50);
-        m1.display();
+        System.out.println(m1);
         // m1.sciMarks cannot be accessed as it is declared privately
         m1.setMathMarks(90);
-        m1.display();
+        System.out.println(m1.toString());
     }
 
 }
@@ -55,8 +55,9 @@ class Marks {
         this.engMarks = engMarks;
     }
 
-    void display() {
-        System.out.println("sciMarks=" + sciMarks + ", mathMarks=" + mathMarks + ", engMarks=" + engMarks);
+    @Override
+    public String toString() {
+        return "Marks [sciMarks=" + sciMarks + ", mathMarks=" + mathMarks + ", engMarks=" + engMarks + "]";
     }
 
 }

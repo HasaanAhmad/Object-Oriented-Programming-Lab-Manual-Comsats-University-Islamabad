@@ -1,4 +1,4 @@
-package Lab2;
+package LAB2;
 
 class Point {
     private int x;
