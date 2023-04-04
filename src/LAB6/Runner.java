@@ -1,4 +1,3 @@
-
 package LAB6;
 
 class person {
