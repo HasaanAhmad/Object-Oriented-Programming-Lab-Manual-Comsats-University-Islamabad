@@ -89,9 +89,9 @@ class Student extends person {
 
 }
 
-class Runner {
+public class Runner {
     public static void main(String[] args) {
-        Student s1 = new Student("Hasaan Ahmad", "SP22-bse-017", 34324234, "017", 100);
+        Student s1 = new Student("Hasaan Ahmad", "SP22-BSE-017", 030435454, "017", 99);
         s1.display();
     }
 

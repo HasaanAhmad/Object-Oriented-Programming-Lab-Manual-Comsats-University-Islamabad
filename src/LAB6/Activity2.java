@@ -17,7 +17,7 @@ class Employee {
 class Regular extends Employee {
     private int basicPay;
 
-    public Regular(String name, String phone, String address, int allowance, int basicPay) {
+    Regular(String name, String phone, String address, int allowance, int basicPay) {
         super(name, phone, address, allowance);
         this.basicPay = basicPay;
     }
@@ -47,12 +47,12 @@ class Adhoc extends Employee {
     }
 }
 
-public class Runner2 {
-    public static void main(String[] args) {
+public class Activity2 {
 
-        Regular r = new Regular("John", "123456789", "Kathmandu", 1000, 50000);
-        Adhoc a = new Adhoc("John", "123456789", "Kathmandu", 1000, 20, 1000);
-        a.Display();
+    public static void main(String[] args) {
+        Regular r = new Regular("John", "1234567890", "Kathmandu", 1000, 50000);
+        Adhoc a = new Adhoc("Jane", "0987654321", "Kathmandu", 1000, 20, 1000);
         r.Display();
+        a.Display();
     }
 }
