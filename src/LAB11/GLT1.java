@@ -73,7 +73,7 @@ public class GLT1 {
             oos.writeObject(al);
             oos.close();
             fos.close();
-            System.out.println("Done");
+            System.out.println("Saved Successfully");
         } catch (Exception e) {
             System.out.println(e);
         }
